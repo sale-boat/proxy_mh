@@ -21,6 +21,6 @@ app.get('/products/:id', (req, res) => {
   res.sendFile(`${__dirname}/public/index.html`);
 });
 
-app.use('/api', proxy({target: 'http://127.0.0.1:3000'}))
+app.use('/api', proxy({target: 'http://ec2-3-90-25-170.compute-1.amazonaws.com'}))
 
 app.listen(3001);
