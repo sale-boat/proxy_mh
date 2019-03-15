@@ -25,6 +25,6 @@ app.get('/loaderio-ae1ea8a4e2b01d500bfd475abde53608.txt', (req, res) => {
   res.sendFile(`${__dirname}/public/loaderio-ae1ea8a4e2b01d500bfd475abde53608.txt`);
 });
 
-app.use('/api', proxy({target: 'http://ec2-3-90-25-170.compute-1.amazonaws.com'}))
+app.use('/api', proxy({target: 'ec2-3-94-89-165.compute-1.amazonaws.com'}))
 
 app.listen(3001);
